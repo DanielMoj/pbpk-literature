@@ -1,0 +1,31 @@
+{
+  "title": "RAG-Wissensbasis mit MCP-Server für die Recherche in Fachliteratur (Python)",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "description": "<p>Lokale RAG-Wissensbasis für wissenschaftliche Fachliteratur (PBPK und Pharmakometrie): PDF-Extraktion mit GROBID und optional Google Document AI, sektionsbasiertes Chunking, Embeddings (bge-large) und BM25 in Qdrant für hybride Suche; ein MCP-Server in Python stellt Such- und Annotationswerkzeuge für Sprachmodelle bereit. Offline-Tests (pytest) prüfen Zerlegung, hybride Suche und MCP-Server an einem synthetischen Korpus, und ein Werkzeug in eval/ bereitet die Auswertung von Trefferquote und Quellentreue vor (Ergebnisse folgen). Nur Code, keine Literaturdaten.</p><p>English summary: A local retrieval-augmented knowledge base for scientific literature (PBPK and pharmacometrics): PDF extraction with GROBID and optionally Google Document AI, section-based chunking, embeddings (bge-large) and BM25 in Qdrant for hybrid search; an MCP server written in Python provides search and annotation tools for language models. Offline tests (pytest) check chunking, hybrid search and the MCP server on a synthetic corpus, and a tool in eval/ prepares the evaluation of hit rate and source fidelity (results to follow). Code only, no literature data.</p>",
+  "creators": [
+    {
+      "name": "Moj, Daniel Andreas",
+      "orcid": "0009-0008-1594-6065"
+    }
+  ],
+  "license": "mit",
+  "keywords": [
+    "Retrieval-Augmented Generation",
+    "RAG",
+    "Model Context Protocol",
+    "MCP",
+    "hybride Suche",
+    "Qdrant",
+    "PBPK",
+    "Pharmakometrie"
+  ],
+  "language": "deu",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/DanielMoj/pbpk-literature",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

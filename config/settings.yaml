@@ -1,0 +1,26 @@
+# pbpk-literature Pipeline Settings
+
+qdrant:
+  host: 127.0.0.1     # wie in docker-compose.yaml; "localhost" probiert unter Windows erst IPv6 (rund 2 s je Verbindung)
+  port: 6333
+  collection: papers
+
+embedding:
+  model: BAAI/bge-large-en-v1.5
+  device: auto        # auto | cuda | cpu — auto: CUDA, wenn PyTorch eine GPU findet, sonst CPU
+  batch_size: 64
+
+chunking:
+  # Beide Grenzen gelten für geschätzte Subword-Tokens = Wörter × subword_factor
+  min_chunk_length: 50     # kürzere Sektionen werden mit der nächsten zusammengelegt (bei 1.3: unter 39 Wörtern)
+  max_chunk_length: 350    # längere werden an Absätzen, dann Sätzen geteilt (bei 1.3: ab 270 Wörtern), sicher unter dem 512-Token-Limit von bge-large
+  overlap: 0               # wird nicht ausgewertet: Chunks folgen den Sektionen, ohne Überlappung
+  subword_factor: 1.3      # Korrekturfaktor: wissenschaftliche Texte haben ~30% mehr Subword- als Whitespace-Tokens
+
+search:
+  default_top_k: 10
+  hybrid_alpha: 0.7        # 0 = nur BM25, 1 = nur Dense, dazwischen gewichtete Rangfusion (RRF)
+
+mcp:
+  transport: stdio         # stdio | sse | streamable-http
+  sse_port: 8080           # Port für sse und streamable-http

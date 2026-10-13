@@ -1,0 +1,114 @@
+# Journal-Konfiguration für DOI-Fetching
+# ISSN + optionale Keyword-Filter für selektive Ingestion
+
+tier_1:
+  # Vollständig ingestieren (Methoden-Papers ab 2010)
+  - name: "CPT: Pharmacometrics & Systems Pharmacology"
+    issn: "2163-8306"
+    year_from: 2012   # Journal existiert seit 2012
+    keywords: null     # Alle Papers
+
+  - name: "Journal of Pharmacokinetics and Pharmacodynamics"
+    issn: "1567-567X"
+    year_from: 2010
+    keywords: null
+
+  - name: "Pharmaceutical Statistics"
+    issn: "1539-1604"
+    year_from: 2010
+    keywords: null
+
+tier_2:
+  # Selektiv ingestieren (Keyword-Filter)
+  - name: "Clinical Pharmacology & Therapeutics"
+    issn: "0009-9236"
+    year_from: 2010
+    keywords:
+      - PBPK
+      - physiologically based
+      - validation
+      - simulation
+      - DDI prediction
+      - virtual bioequivalence
+
+  - name: "Clinical Pharmacokinetics"
+    issn: "0312-5963"
+    year_from: 2010
+    keywords:
+      - PBPK
+      - population pharmacokinetic
+      - Monte Carlo
+      - model-informed
+
+  - name: "Drug Metabolism and Disposition"
+    issn: "0090-9556"
+    year_from: 2010
+    keywords:
+      - PBPK
+      - prediction
+      - physiologically-based
+      - in vitro-in vivo
+
+  - name: "AAPS Journal"
+    issn: "1550-7416"
+    year_from: 2010
+    keywords:
+      - PBPK
+      - model qualification
+      - virtual bioequivalence
+      - regulatory
+
+  - name: "European Journal of Pharmaceutical Sciences"
+    issn: "0928-0987"
+    year_from: 2010
+    keywords:
+      - PK-Sim
+      - Simcyp
+      - PBPK
+      - physiologically based
+
+tier_3:
+  # On-demand bei Paper-Vorbereitung
+  - name: "Journal of Antimicrobial Chemotherapy"
+    issn: "0305-7453"
+    year_from: 2010
+    keywords:
+      - PTA
+      - probability of target attainment
+      - Monte Carlo
+      - pharmacokinetic model
+
+  - name: "Antimicrobial Agents and Chemotherapy"
+    issn: "0066-4804"
+    year_from: 2010
+    keywords:
+      - PTA
+      - probability of target attainment
+      - PK/PD target
+
+  - name: "Statistics in Medicine"
+    issn: "0277-6715"
+    year_from: 2015
+    keywords:
+      - mixed effects
+      - nonlinear
+      - pharmacokinetic
+      - hierarchical Bayesian
+
+  - name: "Biometrical Journal"
+    issn: "0323-3847"
+    year_from: 2015
+    keywords:
+      - mixed model
+      - nonlinear
+      - simulation study
+      - ADEMP
+
+  - name: "npj Systems Biology and Applications"
+    issn: "2056-7189"
+    year_from: 2015
+    keywords:
+      - QSP
+      - systems pharmacology
+      - virtual patient
+      - identifiability

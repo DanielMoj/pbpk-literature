@@ -1,0 +1,142 @@
+{
+  "document_id": "10.5555_synth.004",
+  "metadata": {
+    "original_metadata": {
+      "doi": "10.5555/synth.004",
+      "title": "Paediatric dose selection for Fiktivol with a virtual population",
+      "authors": [
+        "Doe J",
+        "Mustermann M"
+      ],
+      "journal": "Journal of Synthetic Test Data",
+      "year": 2025,
+      "publisher": "Beispielverlag"
+    },
+    "file_info": {
+      "pdf_path": "data/pdfs/10.5555_synth.004/paper.pdf",
+      "file_size_mb": 0.0,
+      "page_count": 9,
+      "is_scan": false,
+      "document_hash": ""
+    },
+    "processing_info": {
+      "extraction_timestamp": "2026-01-01T00:00:00",
+      "pipeline_version": "2.0",
+      "extraction_methods": [
+        "grobid"
+      ]
+    },
+    "document_metadata": {
+      "title": "Paediatric dose selection for Fiktivol with a virtual population",
+      "authors": [
+        "Jane Doe, Example Institute of Pharmacometrics",
+        "Max Mustermann, Beispiel-Universität, Musterstadt"
+      ],
+      "abstract": "Doses for children are often derived from adult data by scaling clearance with body weight. For the fictional drug Fiktivol we combined allometric scaling with the maturation of glomerular filtration in infants and selected weight-band doses by Monte Carlo simulation of a virtual paediatric population."
+    }
+  },
+  "content": {
+    "sections": [
+      {
+        "id": "section_1",
+        "title": "Introduction",
+        "type": "section",
+        "level": 1,
+        "elements": [
+          {
+            "id": "section_1_elem_1",
+            "type": "paragraph",
+            "coordinates": null,
+            "text": "Clinical trials in children are small, so model-based extrapolation from adults is an accepted way to choose the first paediatric doses. The extrapolation has to account for body size and for the maturation of elimination pathways during the first years of life.",
+            "statistics": {
+              "words": 42,
+              "characters": 221,
+              "sentences": 2
+            }
+          }
+        ],
+        "statistics": {
+          "word_count": 42,
+          "character_count": 221,
+          "sentence_count": 2,
+          "element_count": 1,
+          "paragraph_count": 1,
+          "list_count": 0
+        }
+      },
+      {
+        "id": "section_2",
+        "title": "Methods",
+        "type": "section",
+        "level": 1,
+        "elements": [
+          {
+            "id": "section_2_elem_1",
+            "type": "paragraph",
+            "coordinates": null,
+            "text": "Clearance was scaled with body weight using an allometric exponent of 0.75 and multiplied by a sigmoid maturation function of postmenstrual age for glomerular filtration. A virtual population of 2000 children from birth to 12 years was generated, and for each weight band the dose was chosen that brings the median exposure closest to the adult reference.",
+            "statistics": {
+              "words": 57,
+              "characters": 299,
+              "sentences": 3
+            }
+          }
+        ],
+        "statistics": {
+          "word_count": 57,
+          "character_count": 299,
+          "sentence_count": 3,
+          "element_count": 1,
+          "paragraph_count": 1,
+          "list_count": 0
+        }
+      },
+      {
+        "id": "section_3",
+        "title": "Results",
+        "type": "section",
+        "level": 1,
+        "elements": [
+          {
+            "id": "section_3_elem_1",
+            "type": "paragraph",
+            "coordinates": null,
+            "text": "Four weight bands were sufficient to keep 90 percent of the simulated children within the adult exposure range. Infants below three months needed about half of the dose per kilogram that older children received, reflecting immature filtration.",
+            "statistics": {
+              "words": 37,
+              "characters": 207,
+              "sentences": 2
+            }
+          }
+        ],
+        "statistics": {
+          "word_count": 37,
+          "character_count": 207,
+          "sentence_count": 2,
+          "element_count": 1,
+          "paragraph_count": 1,
+          "list_count": 0
+        }
+      }
+    ],
+    "tables": [],
+    "figures": [],
+    "references": []
+  },
+  "statistics": {
+    "total_sections": 3,
+    "total_tables": 0,
+    "total_figures": 0,
+    "total_references": 0,
+    "total_words": 136,
+    "total_characters": 727,
+    "total_sentences": 7,
+    "extraction_success": true,
+    "quality_metrics": {
+      "successful_table_extractions": 0,
+      "successful_figure_extractions": 0,
+      "table_extraction_rate": 0.0,
+      "figure_extraction_rate": 0.0
+    }
+  }
+}

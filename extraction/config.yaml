@@ -1,0 +1,33 @@
+paths:
+  # Pfade sind relativ zum extraction/-Verzeichnis (Aufruf: cd extraction && python main_pipeline.py)
+  pdf_dir: "../data/pdfs"           # je Paper ein Unterordner mit paper.pdf + metadata.json
+  metadata_dir: "../data/pdfs"      # Bei DOI-Ordner-Struktur identisch mit pdf_dir
+  output_dir: "../data/extracted"   # Consolidator-JSONs (*_extracted.json)
+  image_dir: "../data/images"       # Extrahierte Figuren
+  progress_db: "../data/extraction_progress.db"
+
+grobid:
+  url: "http://localhost:8070"
+  timeout: 300
+  max_retries: 3
+  consolidate_citations: true
+
+google:
+  enabled: false                    # Document AI ist kostenpflichtig; nur mit eigenem Projekt einschalten
+  project_id: "<gcp-projekt-id>"
+  location: "eu"
+  table_processor_id: "<documentai-table-processor-id>"
+  ocr_processor_id: "<documentai-ocr-processor-id>"
+  timeout: 300
+  max_retries: 3
+
+pipeline:
+  max_workers: 10
+  max_memory_mb: 1024
+  batch_size: 10
+  enable_retry: true
+  memory_check_interval: 10
+
+logging:
+  level: "INFO"
+  file: "../logs/extraction.log"

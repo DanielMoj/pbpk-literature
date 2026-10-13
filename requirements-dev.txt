@@ -1,0 +1,3 @@
+-r requirements.txt
+pytest>=8.0
+httpx2           # Starlettes TestClient für die HTTP-Tests des MCP-Servers

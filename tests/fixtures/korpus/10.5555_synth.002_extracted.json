@@ -1,0 +1,169 @@
+{
+  "document_id": "10.5555_synth.002",
+  "metadata": {
+    "original_metadata": {
+      "doi": "10.5555/synth.002",
+      "title": "Two one-sided tests for average bioequivalence: a worked example with simulated data",
+      "authors": [
+        "Mustermann M",
+        "Mustermann E"
+      ],
+      "journal": "Journal of Synthetic Test Data",
+      "year": 2021,
+      "publisher": "Beispielverlag"
+    },
+    "file_info": {
+      "pdf_path": "data/pdfs/10.5555_synth.002/paper.pdf",
+      "file_size_mb": 0.0,
+      "page_count": 6,
+      "is_scan": false,
+      "document_hash": ""
+    },
+    "processing_info": {
+      "extraction_timestamp": "2026-01-01T00:00:00",
+      "pipeline_version": "2.0",
+      "extraction_methods": [
+        "grobid"
+      ]
+    },
+    "document_metadata": {
+      "title": "Two one-sided tests for average bioequivalence: a worked example with simulated data",
+      "authors": [
+        "Max Mustermann, Beispiel-Universität, Musterstadt",
+        "Erika Mustermann, Beispiel-Universität, Musterstadt"
+      ],
+      "abstract": "Average bioequivalence is usually shown with the two one-sided tests procedure (TOST). We explain the procedure with a simulated crossover study of a fictional generic formulation and show that it is equivalent to checking whether the 90% confidence interval of the geometric mean ratio lies within 80 to 125 percent."
+    }
+  },
+  "content": {
+    "sections": [
+      {
+        "id": "section_1",
+        "title": "Introduction",
+        "type": "section",
+        "level": 1,
+        "elements": [
+          {
+            "id": "section_1_elem_1",
+            "type": "paragraph",
+            "coordinates": null,
+            "text": "A generic formulation may replace the reference product when both lead to the same systemic exposure. Classical significance tests are not suitable for this question, because a non-significant difference does not prove equivalence. The two one-sided tests procedure reverses the hypotheses: the null hypothesis states that the formulations differ by more than an acceptable margin.",
+            "statistics": {
+              "words": 55,
+              "characters": 327,
+              "sentences": 3
+            }
+          }
+        ],
+        "statistics": {
+          "word_count": 55,
+          "character_count": 327,
+          "sentence_count": 3,
+          "element_count": 1,
+          "paragraph_count": 1,
+          "list_count": 0
+        }
+      },
+      {
+        "id": "section_2",
+        "title": "Methods",
+        "type": "section",
+        "level": 1,
+        "elements": [
+          {
+            "id": "section_2_elem_1",
+            "type": "paragraph",
+            "coordinates": null,
+            "text": "We simulated a two-period, two-sequence crossover study with 24 healthy volunteers. The area under the curve and the peak concentration were log-transformed and analysed with a linear mixed model containing sequence, period and formulation as fixed effects and subject as random effect. Each of the two one-sided tests was carried out at a significance level of five percent. The test product is declared bioequivalent if both tests reject, which is the same as requiring the 90% confidence interval of the geometric mean ratio to lie completely within the acceptance range of 80 to 125 percent.",
+            "statistics": {
+              "words": 95,
+              "characters": 501,
+              "sentences": 4
+            }
+          }
+        ],
+        "statistics": {
+          "word_count": 95,
+          "character_count": 501,
+          "sentence_count": 4,
+          "element_count": 1,
+          "paragraph_count": 1,
+          "list_count": 0
+        }
+      },
+      {
+        "id": "section_3",
+        "title": "Results",
+        "type": "section",
+        "level": 1,
+        "elements": [
+          {
+            "id": "section_3_elem_1",
+            "type": "paragraph",
+            "coordinates": null,
+            "text": "The geometric mean ratio of the area under the curve was 0.97 with a 90% confidence interval from 0.91 to 1.04. For the peak concentration the ratio was 1.05 and the interval ranged from 0.96 to 1.15. Both one-sided tests rejected for both parameters, so the fictional generic formulation would be considered bioequivalent. The within-subject coefficient of variation was 14 percent.",
+            "statistics": {
+              "words": 61,
+              "characters": 323,
+              "sentences": 10
+            }
+          }
+        ],
+        "statistics": {
+          "word_count": 61,
+          "character_count": 323,
+          "sentence_count": 10,
+          "element_count": 1,
+          "paragraph_count": 1,
+          "list_count": 0
+        }
+      },
+      {
+        "id": "section_4",
+        "title": "Discussion",
+        "type": "section",
+        "level": 1,
+        "elements": [
+          {
+            "id": "section_4_elem_1",
+            "type": "paragraph",
+            "coordinates": null,
+            "text": "The worked example reproduces the textbook result that TOST at five percent and the 90% confidence interval approach lead to the same decision. For highly variable drugs a reference-scaled approach widens the acceptance range, and the sample size has to be planned for the expected variability and the true ratio.",
+            "statistics": {
+              "words": 50,
+              "characters": 264,
+              "sentences": 2
+            }
+          }
+        ],
+        "statistics": {
+          "word_count": 50,
+          "character_count": 264,
+          "sentence_count": 2,
+          "element_count": 1,
+          "paragraph_count": 1,
+          "list_count": 0
+        }
+      }
+    ],
+    "tables": [],
+    "figures": [],
+    "references": []
+  },
+  "statistics": {
+    "total_sections": 4,
+    "total_tables": 0,
+    "total_figures": 0,
+    "total_references": 0,
+    "total_words": 261,
+    "total_characters": 1415,
+    "total_sentences": 19,
+    "extraction_success": true,
+    "quality_metrics": {
+      "successful_table_extractions": 0,
+      "successful_figure_extractions": 0,
+      "table_extraction_rate": 0.0,
+      "figure_extraction_rate": 0.0
+    }
+  }
+}

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Bitte zitieren Sie diese Software über die Angaben in dieser Datei."
+type: software
+title: "RAG-Wissensbasis mit MCP-Server für die Recherche in Fachliteratur (Python)"
+version: 1.0.0
+date-released: "2026-10-14"
+authors:
+  - family-names: Moj
+    given-names: Daniel Andreas
+    orcid: "https://orcid.org/0009-0008-1594-6065"
+license: MIT
+repository-code: "https://github.com/DanielMoj/pbpk-literature"
+abstract: "Lokale RAG-Wissensbasis für wissenschaftliche Fachliteratur (PBPK und Pharmakometrie): PDF-Extraktion mit GROBID und optional Google Document AI, sektionsbasiertes Chunking, Embeddings (bge-large) und BM25 in Qdrant für hybride Suche; ein MCP-Server in Python stellt Such- und Annotationswerkzeuge für Sprachmodelle bereit. Nur Code, keine Literaturdaten."
+keywords:
+  - "Retrieval-Augmented Generation"
+  - "RAG"
+  - "Model Context Protocol"
+  - "MCP"
+  - "hybride Suche"
+  - "Qdrant"
+  - "PBPK"
+  - "Pharmakometrie"
