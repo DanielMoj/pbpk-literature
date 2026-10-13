@@ -4,6 +4,7 @@ type: software
 title: "RAG-Wissensbasis mit MCP-Server für die Recherche in Fachliteratur (Python)"
 version: 1.0.0
 date-released: "2026-10-14"
+doi: "10.5281/zenodo.23352915"
 authors:
   - family-names: Moj
     given-names: Daniel Andreas

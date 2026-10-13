@@ -1,5 +1,7 @@
 # pbpk-literature: RAG-Wissensbasis mit MCP-Server für die Recherche in Fachliteratur
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23352915.svg)](https://doi.org/10.5281/zenodo.23352915)
+
 **English summary.** A local retrieval-augmented knowledge base for scientific papers, built for PBPK and pharmacometrics literature. PDFs are parsed into sections (GROBID; table contents and OCR optionally via Google Document AI), chunked along the sections, embedded (BAAI/bge-large-en-v1.5) and stored in Qdrant together with BM25 sparse vectors. Search is hybrid: a dense and a BM25 ranking are fused by weighted reciprocal rank fusion (`hybrid_alpha`). A Model Context Protocol (MCP) server written in Python exposes search and annotation tools to an LLM client: the server returns passages with their sources, the language model in the client writes the answer. Offline tests (pytest, synthetic corpus, in-memory Qdrant) cover chunking, hybrid search and the server; `eval/` prepares a study of hit rate and source fidelity. The repository contains code only, no PDFs and no extracted texts.
 
 ---
@@ -190,6 +192,9 @@ Der Code ist mit agentengestützter Codeerzeugung entstanden. Eigener Anteil: fa
 ## Zitieren
 
 Bitte über die DOI der jeweiligen Version zitieren (Zenodo); die Angaben stehen in [`CITATION.cff`](CITATION.cff).
+
+- Version 1.0.0: [10.5281/zenodo.23352916](https://doi.org/10.5281/zenodo.23352916)
+- alle Versionen (Konzept-DOI, führt stets zur neuesten Version): [10.5281/zenodo.23352915](https://doi.org/10.5281/zenodo.23352915)
 
 ## Lizenz
 
